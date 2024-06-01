@@ -8,7 +8,7 @@ run_unit_test() {
 
     mkdir build && cd build
 
-    cmake -DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" ..
+    cmake -DCMAKE_OSX_ARCHITECTURES="arm64" ..
 
     if make ; then
         echo "Start Run Tests"
